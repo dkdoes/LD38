@@ -32,7 +32,7 @@ public class maxSpeedRope : MonoBehaviour {
         }
         speed = rigidbody.velocity.magnitude;
         angularspeed = rigidbody.angularVelocity.magnitude;
-        Debug.Log(rigidbody.velocity);
+        //Debug.Log(rigidbody.velocity);
         
     }
     
