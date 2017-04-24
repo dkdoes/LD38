@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class controller_script_2_lol : MonoBehaviour {
-    private float hasFired = 0f;
+    public float hasFired = 0f;
     public GameObject bullet;
 	public Camera camera;
 	public Vector3 direction0;
@@ -20,8 +20,9 @@ public class controller_script_2_lol : MonoBehaviour {
             if(hasFired<=0){
                 Debug.Log("shoot");
                 var b = Instantiate(bullet);
+				b.transform.position = transform.position;
 				b.GetComponent<Rigidbody> ().velocity = direction0;
-                b.transform.position = transform.position;
+                
 				//b.transform.rotation = camera.transform.rotation;
                 hasFired = 0.7f;
             }
