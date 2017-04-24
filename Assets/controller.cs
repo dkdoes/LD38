@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class controller : MonoBehaviour {
     public float speed = 0.2f;
+    //private float hasFired = 0f;
     //public GameObject control;
 	// Use this for initialization
 	void Start () {
@@ -12,7 +13,7 @@ public class controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        //hasFired -= Time.deltaTime;
 	}
     void FixedUpdate(){
         var x = Input.GetAxis("Horizontal");
@@ -21,7 +22,6 @@ public class controller : MonoBehaviour {
         t.x += x * speed;
         t.z += y * speed;
         transform.position = t;
-        //Debug.Log(t);
-        //transform.position.x += x;
+        
     }
 }
