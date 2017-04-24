@@ -20,7 +20,10 @@ public class controller_script_2_lol : MonoBehaviour {
             if(hasFired<=0){
                 Debug.Log("shoot");
                 var b = Instantiate(bullet);
-				b.transform.position = transform.position;
+				var t = transform.position;
+				t.y += 0.5f;
+				t.z += 0.66f;
+				b.transform.position = t;
 				b.GetComponent<Rigidbody> ().velocity = direction0;
                 
 				//b.transform.rotation = camera.transform.rotation;
