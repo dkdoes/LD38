@@ -12,7 +12,7 @@ public class dialogue : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        text = GameObject.FindGameObjectWithTag("Respawn").GetComponent<UnityEngine.UI.Text>();
         textTimer = text.gameObject.GetComponent<uitexttimer>();
 	}
 	
@@ -25,9 +25,9 @@ public class dialogue : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (true)
-        {if (triggered == false)
-            {
+        if (other.tag == "Pluto")
+            {if (triggered == false)
+                {
 
 
                 triggered = true;
@@ -36,8 +36,8 @@ public class dialogue : MonoBehaviour {
                 textTimer.curTime = 0;
 
 
-            }
+                }
 
+            }
         }
-    }
 }
