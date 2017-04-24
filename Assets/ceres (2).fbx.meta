@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 03d5786c3092b604dab2b83989a5300d
-timeCreated: 1493066884
+guid: 3496a16af6f480141a72b0d2c34f074f
+timeCreated: 1493067812
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pSphere1
     9500000: //RootNode
   materials:
     importMaterials: 1
