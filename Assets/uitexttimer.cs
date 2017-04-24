@@ -10,6 +10,8 @@ public class uitexttimer : MonoBehaviour {
     UnityEngine.UI.Text text;
     GameObject panel;
     UnityEngine.UI.Image panelImage;
+    public Color c;
+    Color deactive;
 
 
 
@@ -29,7 +31,15 @@ public class uitexttimer : MonoBehaviour {
         if (active) {
             curTime += Time.deltaTime;
 
-            panelImage.color = new Color();
+            panelImage.color = c;
+
+            if (curTime > endTime) {
+                active = false;
+                curTime = 0;
+                panelImage.color = deactive;
+                text.text = "";
+            }
+
 
         }
 
