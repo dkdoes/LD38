@@ -21,7 +21,7 @@ public class controller : MonoBehaviour {
         t.x += x * speed;
         t.z += y * speed;
         transform.position = t;
-        Debug.Log(t);
+        //Debug.Log(t);
         //transform.position.x += x;
     }
 }
