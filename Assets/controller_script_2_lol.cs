@@ -21,7 +21,7 @@ public class controller_script_2_lol : MonoBehaviour {
                 Debug.Log("shoot");
                 var b = Instantiate(bullet);
 				var t = transform.position;
-				t.y += 0.5f;
+				t.y += 1f;
 				t.z += 0.66f;
 				b.transform.position = t;
 				b.GetComponent<Rigidbody> ().velocity = direction0;
