@@ -10,7 +10,6 @@ public class cameraFollow : MonoBehaviour {
     //public Vector3 t3;
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
